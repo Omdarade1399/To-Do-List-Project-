@@ -2,8 +2,8 @@ const mainTodoElem = document.querySelector(".todo-list-elem");
 const inputValue = document.getElementById("inputValue");
 const btn = document.querySelector(".btn");
 
-mainTodoElem.style.display = 'none';
 
+mainTodoElem.style.display = 'none';
 
 
 btn.addEventListener("click", () => {
