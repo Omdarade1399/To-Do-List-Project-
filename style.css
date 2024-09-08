@@ -18,8 +18,9 @@ body{
 h1{
     padding: 20px;
     margin-top: 50px;
-    color: midnightblue;
-    text-shadow: 1px 1px 2px black;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-shadow: 1px 1px 3px black;
 }
 
 #inputValue{
@@ -34,9 +35,9 @@ h1{
     border-radius: 20px;
     border: none;
     outline: none;
-    background: linear-gradient(to left, #ffc2e7, #a35693);
+    background: linear-gradient(to left, #a35693, #ffc2e7, #a35693);
     margin: 10px;
-    box-shadow: 0px 0px 3px black;
+    box-shadow: 0px 2px 5px black;
 }
 
 .btn{
@@ -46,12 +47,12 @@ h1{
     text-align: center;
     border: none;
     outline: none;
-    background: linear-gradient(to right, #c03f3f, #352323);
+    background: linear-gradient(to right, #352323, #c03f3f, #352323);
     color: white;
     font-size: medium;
     font-weight: 600;
     margin: 10px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 2px 5px black;
 }
 
 .todo-list-elem{
@@ -60,12 +61,12 @@ h1{
     height: fit-content;
     padding: 15px;
     border-radius: 10px;
-    background: linear-gradient(to top, #306afb, #523dab);
+    background: linear-gradient(to right, #111145, #736fa4, #111145);
     text-align: left;
     letter-spacing: 0.5px;
     word-spacing: 2px;
     color: white;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 2px 5px black;
     cursor: pointer;
 }
 
@@ -74,4 +75,5 @@ h1{
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 3px black;
 }
