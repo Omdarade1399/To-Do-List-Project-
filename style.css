@@ -68,7 +68,6 @@ h1{
     word-spacing: 2px;
     color: white;
     box-shadow: 0px 2px 5px black;
-    cursor: pointer;
 }
 
 .listPara{
@@ -77,4 +76,6 @@ h1{
     margin-top: 10px;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    display: inline;
 }
