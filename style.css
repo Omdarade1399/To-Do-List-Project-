@@ -8,61 +8,65 @@ body{
     height: 100vh;
     width: 100vw;
     text-align: center;
-    background: linear-gradient(to bottom, #373535, #b1b1b1);
-    /* background: #3d3d3d; */
+    background: linear-gradient(to bottom, #141e30, #3e5977, #141e30);
 }
 
 .contentBox{
-    margin: 25px auto;
+    width: 70%;
+    margin: 10px auto;
 }
 
 h1{
-    padding: 20px;
-    margin-top: 50px;
-    color: white;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
     word-spacing: 5px;
-    font-size: 50px;
+    font-size: 3vw;
     text-underline-offset: 10px;
     text-shadow: 1px 3px 5px black;
+    font-variant: small-caps;
+    font-style: italic;
 }
 
 #inputValue{
     height: 45px;
-    width: 500px;
+    width: 82.6%; 
     font-size: medium;
     font-weight: 600;
     color: white;
     letter-spacing: 1px;
     word-spacing: 1px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     outline: none;
-    background: linear-gradient(to left, #a35693, #ffc2e7, #a35693);
-    margin: 10px;
+    background: linear-gradient(to bottom, #a54751, #ffaf7b);
+    margin: 10px auto;
     box-shadow: 0px 2px 5px black;
+    text-shadow: 1px 3px 5px black; 
 }
 
 .btn{
-    height: 40px;
-    width: 120px;
-    border-radius: 20px;
+    height: 45px;
+    width: 17%;
+    border-radius: 10px;
     text-align: center;
     border: none;
     outline: none;
-    background: linear-gradient(to right, #690707, #c03f3f, #690707);
+    background: linear-gradient(to top, #690707, #c03f3f, #690707);
     color: white;
     font-size: medium;
     font-weight: 600;
-    margin: 10px;
+    margin: 10px auto;
+    cursor: pointer;
     box-shadow: 0px 2px 5px black;
+    text-shadow: 1px 3px 5px black;
 }
 
 .todo-list-elem{
-    width: 42%;
-    margin: 30px auto;
+    width: 100%; 
+    margin: 20px auto;
     height: fit-content;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     background: linear-gradient(to right, #242469, #736fa4, #242469);
     text-align: left;
@@ -70,13 +74,88 @@ h1{
     word-spacing: 2px;
     color: white;
     box-shadow: 0px 2px 5px black;
+    text-shadow: 1px 3px 5px black;
+    cursor: pointer;
 }
 
-.listPara{
+.elemDiv {
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listPara {
     font-size: larger;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 3px black;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-shadow: 1px 2px 5px black;
     cursor: pointer;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.delBtn {
+    width: 90px;
+    height: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    background: linear-gradient(to left, #6c245d, #ef92ca, #6c245d);
+    box-shadow: 0px 2px 5px black;
+    text-shadow: 1px 2px 3px black;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 6vw; 
+    }
+    
+    #inputValue {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .todo-list-elem {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 8vw; 
+    }
+
+    .btn {
+        width: 100px;
+        font-size: small;
+    }
+
+    #inputValue {
+        width: 95%; 
+    }
+
+    .todo-list-elem {
+        width: 95%; 
+    }
+
+    .listPara {
+        font-size: large;
+    }
+
+    .delBtn {
+        width: 60px;
+        font-size: medium;
+    }
 }
